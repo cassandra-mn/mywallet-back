@@ -13,8 +13,8 @@ app.post('/sign-up', signUp);
 app.post('/sign-in', signIn);
 
 app.get('/transactions', transactions);
-app.post('/transactions/inputs', inputs);
-app.post('/transactions/outputs', outputs);
+app.post('/transactions/input', inputs);
+app.post('/transactions/output', outputs);
 
 app.listen(5000, () => {
     console.log(chalk.green.bold('Servidor no ar'));
