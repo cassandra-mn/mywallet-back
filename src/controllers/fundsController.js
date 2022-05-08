@@ -22,7 +22,6 @@ export async function transactions(req, res) {
         const {email} = user;
         
         const transactions = await db.collection('transactions').find({user: email}).toArray();
-        console.log(transactions);
 
         res.send(transactions);
     } catch(e) {
